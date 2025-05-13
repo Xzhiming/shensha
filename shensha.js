@@ -1537,6 +1537,23 @@ function getJiaziOrder(yearganzhi) {
 }
 
 /**
+ * 天干阴阳
+ * @param {} tiangan 
+ * @returns 返回true｜false
+ */
+function tianganYinyang(tiangan) {
+	if ((tiangan==("甲")) || (tiangan==("丙")) || (tiangan==("戊"))
+			|| (tiangan==("庚")) || (tiangan==("壬"))) {
+		return true;
+	}
+	if ((tiangan==("乙")) || (tiangan==("丁")) || (tiangan==("己"))
+			|| (tiangan==("辛")) || (tiangan==("癸"))) {
+		return false;
+	}
+	return false;
+}
+
+/**
  * 查询地支五行。
  */
 function dizhiWuxing(dizhi) {
